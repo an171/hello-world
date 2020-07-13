@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        @font-face {
+        font-family: Oswald;
+        src: url('Oswald-VariableFont_wght.ttf');
+       }
+       @font-face {
+       font-family: Lora;
+       src: url('Lora-VariableFont_wght.ttf');
+       }
+       .box {
+          width: 1350px;
+          height: 650px;
+          background-color: #FBD7A3;
+          display: grid;
+          margin: auto;
+       }
+       .box1 {
+          grid-template-rows: 1fr 3fr 1fr; 
+          grid-template-columns: 50px 574px 4fr; 
+       }
+       .box2 {
+          grid-template-columns: 1fr 1fr; 
+          grid-column-gap: 20px;
+       }
+       .innerbox {
+           background-color: #FBD7A3;;
+       }
+       .innerbox2 {
+           background-color: #3F504C;
+           grid-column-start: 1; 
+           grid-column-end: 4; 
+           grid-row-start: 2; 
+           grid-row-end: 3; 
+       }
+       .pic1 {
+        grid-column-start: 2; 
+        grid-column-end: 3; 
+        grid-row-start: 1; 
+        grid-row-end: 4; 
+       }
+       .txt1 {
+        grid-column-start: 3; 
+        grid-column-end: 4; 
+        grid-row-start: 2; 
+        grid-row-end: 3; 
+        font-family: Oswald, sans-serif;
+        color: white;
+        display: flex;        
+       }
+       .tit {
+        margin:auto;
+        margin-left: 160px;
+       }
+       .tit h1 {
+        font-weight: 600;
+        font-size: 65px;
+        color: #fff4ef;
+        }
+        .tit p {
+        font-family: Lora;
+        font-weight: 400;
+        font-size: 19px;
+        font-style: italic;
+        opacity: 0.5
+        }
+        .tit2 {
+        width:auto;
+        height: 70%;
+        background-color: #3F504C;
+        display: flex;
+        padding: 0 100px;
+        color: white;
+        font-family: Oswald;
+        }
+        .tit2 h1 {
+            font-size: 35px;
+            font-weight: bold;
+        }
+        .tit2 p {
+            font-family: Lora;
+            font-size: 13px;
+        }
+
+        .innerbox21 {
+           display: flex;
+           align-items: flex-end;
+       }
+       .innertit2 {
+          margin: auto
+       }
+
+
+    </style>
+    
+    </head>
+<body>
+    <div class="box box1">
+         <div class="innerbox1 innerbox"></div>
+         <div class="innerbox2 innerbox"></div>
+         <div class="innerbox3 innerbox"></div>
+         <div class="pic1"><img src="pic1.jpg"></div>
+         <div class="txt1"><article class="tit"><h1>АГЕНСТВО<br> ПО <br> ТУРИЗМУ<br> КАРАНТИН</h1><p>Taking you to the best places</p></article></div>
+    </div>
+    <div class="box box2">
+        <div class="innerbox21 innerbox">
+              <article class="tit2"> 
+                  <div class="innertit2">
+                  <h1>О НАШЕМ АГЕНСТВЕ</h1>
+                  <p>Туристическое агентство Карантин предлагает вам самые лучшие путевки с 2006 года. 
+                      Мы гарантируем, что каждая поездка будет незабываемой и неповторимой.
+                    </p>
+                    </div>
+                </article>
+            </div>
+        <div class="innerbox22 innerbox"> <img src="Yellow and Green Travel Portfolio Website.png"></div>
+    </div>
+</body>
+</html>
