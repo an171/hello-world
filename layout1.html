@@ -29,6 +29,7 @@
           grid-template-columns: 1fr 1fr; 
           grid-column-gap: 20px;
        }
+
        .innerbox {
            background-color: #FBD7A3;;
        }
@@ -95,9 +96,58 @@
        .innertit2 {
           margin: auto
        }
+        /* 3 блок */
+        .box3 {
+/*          grid-template-columns: repeat(3,1fr); */
+          grid-template-rows: 1fr 4fr 5fr 4fr 1fr; 
+       }
+       .innerbox31 {
+           background-color: #3F504C;
+           grid-row-start: 2; 
+           grid-row-end: 3; 
+           font-size: 35px;
+           font-weight: bold;
+           font-family: Oswald;
+           text-align: center;
+           color:white
+        }
+        .innerbox32 {
+           background-color: #3F504C;
+           grid-row-start: 3; 
+           grid-row-end: 4; 
+           text-align: center;
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
 
+        }
+        .innerbox33 {
+           background-color: #3F504C;
+           grid-row-start: 4; 
+           grid-row-end: 5; 
+           display: flex;
+           align-items: flex-start;
+           justify-content: space-around;           
+           text-align: center;
+           color: white;
+
+        }
+        .txt31 {
+            width: 256px;
+
+        }
+        .txt31 h1 {
+           font-size: 14px;
+           font-weight: bold;
+           font-family: Lora;
+        }
+        .txt31 p {
+           font-size: 13px;
+           font-family: Lora;
+        }
 
     </style>
+
     
     </head>
 <body>
@@ -122,6 +172,16 @@
         <div class="innerbox22 innerbox"> <img src="Yellow and Green Travel Portfolio Website.png"></div>
     </div>
     <div class="box box3">
+        <div class="innerbox31 innerbox"><h1>НАШИ ТУРЫ</h1></div>
+        <div class="innerbox32 innerbox">
+            <img src="pict31.png"> 
             <img src="pict32.png"> 
+            <img src="pict33.png"> 
+        </div>
+        <div class="innerbox33 innerbox">
+            <div class="txt31"><h1>ЛЕТНИЙ ОТДЫХ</h1><p>Посетите прекрасные пляжи страны и роскошные курорты.</p></div>
+            <div class="txt31"><h1>ЗИМНЕЕ ЧУДО</h1><p>Проведите отпуск в уютных домиках и величественных лесах.</p></div>
+            <div class="txt31"><h1>НОВЫЙ ГОД</h1><p>Начните год с посещения исторических достопримечательностей.</p></div>
+       </div>
 </body>
 </html>
